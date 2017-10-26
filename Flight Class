@@ -1,0 +1,59 @@
+Public class Flight {
+	String airDepart; //airport that passengers are departing from
+	String airArrival; //airport that passengers are flying to
+	int numSeats; //number of seats available on airplane
+	int planeNumber; //plane identification number
+	String airline; //name of plane’s airline
+ 	int gate; //flight gate
+
+
+	//constructors
+	flight (String _airDepart, String _airArrival, int _numSeats, int _planeNumber, String _airline, int _gate,) {
+		airDepart =  _airDepart; //airport that passengers are departing from
+		airArrival =  _airArrival;
+		numSeats =  _numSeats; 
+		planeNumber = _planeNumber; 
+		airline = _airline; 
+		gate =  _gate; 
+	}
+
+	//getters
+	Public String getAirDepart(){
+		return _airDepart;
+	}
+	Public String getAirArrivalt(){
+		return _airArrival;
+	}
+	Public int getNumseats(){
+		return _numSeats;
+	}
+	Public int getPlaneNumber(){
+		return  _planeNumber;
+	}
+	Public String getAirliner(){ 
+		return  _airline;
+	}
+	Public int getGate(){
+		return   _gate;
+	}
+	
+	//Setters
+	Public void setAirDepart(){  
+		airDepart =  _airDepart; 
+	}
+	Public void setAirArrivalt(){ 
+		airArrival =  _airArrival;
+	}
+	Public void settNumseats(){ 
+		numSeats =  _numSeats; 
+ 	}
+	Public void setPlaneNumber(){
+		planeNumber = _planeNumber; 
+	}
+	Public void setAirliner(){ 
+		airline = _airline; 
+	}
+	Public void setGate(){ 
+		gate =  _gate; 
+	}
+}
