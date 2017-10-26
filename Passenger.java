@@ -7,7 +7,7 @@ public class Passenger {
 	private String email;
 	private String suffix;
 	
-	private int day;
+	private int dobDay;
 	private int year;
 	private int month;
 	private int numLuggage;
@@ -69,14 +69,14 @@ public class Passenger {
 	};
 	
 	//sets birth date for passenger 
-	public void setBirthDate (int day, int month, int year) {
-		this.day = day;
+	public void setBirthDate (int dobDay, int month, int year) {
+		this.dobDay = dobDay;
 		this.month = month;
 		this.year = year;
 	};
 	
-	public void setBirthDay (int day) {
-		this.day = day;
+	public void setBirthDay (int dobDay) {
+		this.dobDay = dobDay;
 	}
 	
 	public void setBirthMonth (int month) {
@@ -125,7 +125,7 @@ public class Passenger {
 	
 	//sets birthdate of passenger
 	public int[] getBirthDate() {
-		int[] BirthDate = new int[]{month, day, year}; //stored in array in mm/dd/yyyy arrangement
+		int[] BirthDate = new int[]{month, dobDay, year}; //stored in array in mm/dd/yyyy arrangement
 		return BirthDate;
 	}; 
 	
@@ -134,7 +134,7 @@ public class Passenger {
 	}
 	
 	public int getBirthDay() {
-		return day;
+		return dobDay;
 	}
 	
 	public int getBirthYear() {
