@@ -44,7 +44,7 @@ Public class Flight {
 	Public void setAirArrivalt(){ 
 		airArrival =  _airArrival;
 	}
-	Public void settNumseats(){ 
+	Public void setNumseats(){ 
 		numSeats =  _numSeats; 
  	}
 	Public void setPlaneNumber(){
