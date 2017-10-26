@@ -1,69 +1,30 @@
 Public class Flight {
 	String airDepart; //airport that passengers are departing from
 	String airArrival; //airport that passengers are flying to
+	int departTime; //Arrival time
+	int arrivalTime; //Departure time
 	int numSeats; //number of seats available on airplane
 	int planeNumber; //plane identification number
-	String airline; //name of plane’s airline
  	int gate; //flight gate
+	int flightNumber; //Flight Number
 
-
-	//constructors
-	flight (String _airDepart, String _airArrival, int _numSeats, int _planeNumber, String _airline, int _gate,) {
+	//Constructors
+	Flight (String _airDepart, String _airArrival, int _numSeats, int _planeNumber, int _gate, int _departTime, int _arrivalTime) {
 		airDepart =  _airDepart; //airport that passengers are departing from
 		airArrival =  _airArrival;
 		numSeats =  _numSeats; 
 		planeNumber = _planeNumber; 
-		airline = _airline; 
+		flightNumber = _flightNumber;
 		gate =  _gate; 
+		arrivalTime = _arrivalTime;
+		departTime = _departTime;
 	}
-  string departSearch;
-  string arrivalSearch;
-  string departureDate;
-  string arrivalDate;
-  int numOfAdults;
-  int numOfChildren; 
-  string returnDate;
-  string multiCity1;
-  string multiCity2;
-  string multiCity3;
-  //One way
-  Public String flightSearch(string dep, string arr, string depD, int numAd, int numCh){
-    departSearch = dep;
-    arrivalSearch = arr;
-    departureDate = depD;
-    arrivalDate = arrD;
-    numOfAdults = numAd;
-    numOfChildren = numCh;
-  }
-  //Round-Trip
-  Public String flightSearch(string dep, string arr, string depD, string retD, int numAd, int numCh){
-    departSearch = dep;
-    arrivalSearch = arr;
-    departureDate = depD;
-    returnDate = retD;
-    numOfAdults = numAd;
-    numOfChildren = numCh;
-  }
-  //Multi-City
-  string flight1Date;
-  string flight2Date;
-  string flight3Date
-  Public String flightSearch(string city1, string city2, string city3, string firstDate, string secondDate, string thirdDate, int numAd, int numCh){
-    multiCity1 = city1;
-    multiCity2 = city2;
-    multiCity3 = city3;
-    flight1Date = firstDate;
-    flight2Date = secondDate;
-    flight3Date = thirdDate;
-    numOfAdults = numAd;
-    numOfChildren = numCh;
-  }
-
+  
 	//getters
 	Public String getAirDepart(){
 		return _airDepart;
 	}
-	Public String getAirArrivalt(){
+	Public String getAirArrival(){
 		return _airArrival;
 	}
 	Public int getNumseats(){
@@ -72,18 +33,25 @@ Public class Flight {
 	Public int getPlaneNumber(){
 		return  _planeNumber;
 	}
-	Public String getAirliner(){ 
-		return  _airline;
+	Public int getFlightNumber(){
+		return  _flightNumber;
+	}
 	}
 	Public int getGate(){
 		return   _gate;
+	}
+	Public int getDepartTime(){ 
+		return _departTime; 
+	}
+	Public int getArrivalTime(){ 
+		return _arrivalTime;
 	}
 	
 	//Setters
 	Public void setAirDepart(){  
 		airDepart =  _airDepart; 
 	}
-	Public void setAirArrivalt(){ 
+	Public void setAirArrival(){ 
 		airArrival =  _airArrival;
 	}
 	Public void setNumseats(){ 
@@ -92,10 +60,16 @@ Public class Flight {
 	Public void setPlaneNumber(){
 		planeNumber = _planeNumber; 
 	}
-	Public void setAirliner(){ 
-		airline = _airline; 
+	Public void setFlightNumber(){
+		flightNumber = _flightNumber; 
 	}
 	Public void setGate(){ 
 		gate =  _gate; 
+	}
+	Public void setDepartTime(int _departTime){ 
+		departTime =  _departTime; 
+	}
+	Public void setArrivalTime(int _arrivalTime){ 
+		arrivalTime =  _arrivalTime; 
 	}
 }
